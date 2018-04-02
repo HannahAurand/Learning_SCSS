@@ -1,0 +1,23 @@
+{
+  "name": "scss_practice",
+  "version": "1.0.0",
+  "description": "## Nesting Elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HannahAurand/Learning_SCSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HannahAurand/Learning_SCSS/issues"
+  },
+  "homepage": "https://github.com/HannahAurand/Learning_SCSS#readme",
+  "dependencies": {
+    "node-sass": "^4.8.3"
+  }
+}

@@ -339,4 +339,43 @@ Then we set our keyframes.
 }
 ```
 
+This code in SCSS that changes the colors of circles with the .dot class name looks like this in SCSS:
+
+```
+$colors: red, orange, yellow, green, blue, indigo, violet;
+
+  @for $i from 1 through length($colors) {
+    .dot:nth-child(#{length($colors)}n+#{$i}) {
+      background: nth($colors, $i)
+    }
+  }
+```
+
+...And looks like this in vanilla CSS: 
+
+```
+.dot:nth-child(7n+1) {
+  background: red; }
+
+.dot:nth-child(7n+2) {
+  background: orange; }
+
+.dot:nth-child(7n+3) {
+  background: yellow; }
+
+.dot:nth-child(7n+4) {
+  background: green; }
+
+.dot:nth-child(7n+5) {
+  background: blue; }
+
+.dot:nth-child(7n+6) {
+  background: indigo; }
+
+.dot:nth-child(7n+7) {
+  background: violet; }
+```
+
 That is the quick and dirty intro to SCSS. # Learning_SCSS
+
+In order to compile scss to css and be able to use it in your projects, consult this site: https://webdesign.tutsplus.com/tutorials/watch-and-compile-sass-in-five-quick-steps--cms-28275
